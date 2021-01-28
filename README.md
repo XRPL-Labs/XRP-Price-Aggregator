@@ -4,6 +4,8 @@ Fetches XRP (USD) prices from multiple data sources, filters out values based on
 Data providers are called in parallel, after which a number of requests (possibly: retries)
 are being executed with a delay per request.
 
+Background info: https://dev.to/wietse/aggregated-xrp-usd-price-info-on-the-xrp-ledger-1087
+
 The default values:
 
   - 3 calls per dataprovider  

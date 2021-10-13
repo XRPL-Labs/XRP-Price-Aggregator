@@ -3,7 +3,7 @@ import debug from 'debug'
 
 const log = debug('oracle:provider:binance')
 
-export default class Cryptowatch extends OracleProvider {
+export default class Binance extends OracleProvider {
   constructor () {
     super()
     log('Hi')

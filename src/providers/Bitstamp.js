@@ -3,7 +3,7 @@ import debug from 'debug'
 
 const log = debug('oracle:provider:bitstamp')
 
-export default class Cryptowatch extends OracleProvider {
+export default class Bitstamp extends OracleProvider {
   constructor () {
     super()
     log('Hi')
@@ -11,7 +11,7 @@ export default class Cryptowatch extends OracleProvider {
 
   async get () {
     try {
-      const data = await this.getJSON('https://www.bitstamp.net/api/v2/ticker/XRPUSD/')
+      const data = await this.getJSON('https://www.bitstamp.net/api/v2/ticker/xrpusd/')
       const XrpUsd = Number(data.last) || undefined
       log(`Calling, result: ${XrpUsd}`)
       return XrpUsd

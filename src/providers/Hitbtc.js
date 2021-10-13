@@ -3,7 +3,7 @@ import debug from 'debug'
 
 const log = debug('oracle:provider:hitbtc')
 
-export default class Cryptowatch extends OracleProvider {
+export default class Hitbtc extends OracleProvider {
   constructor () {
     super()
     log('Hi')

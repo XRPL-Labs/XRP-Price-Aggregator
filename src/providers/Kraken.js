@@ -4,7 +4,7 @@ import debug from 'debug'
 
 const log = debug('oracle:provider:kraken')
 
-export default class Cryptowatch extends OracleProvider {
+export default class Kraken extends OracleProvider {
   constructor () {
     super()
     log('Hi')
